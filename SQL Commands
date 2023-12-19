@@ -1,0 +1,28 @@
+create database jani;
+use jani;
+create table Details(
+Employee_ID int,
+Employee_Name varchar(255),
+Employee_Job varchar(255),
+Employee_Salary int,
+Employee_Deptno int);
+desc Details;
+
+insert into Details(Employee_ID, Employee_Name, Employee_Job, Employee_Salary, Employee_Deptno)
+values
+('1', 'Gowthami', 'Developer', '44000', '111'),
+('2', 'Janisha', 'Programmer', '36000', '222'),
+('3', 'Munni', 'HR', '50000', '333'),
+('4', 'Vijaya', 'Programmer', '36000', '222'),
+('5', 'Yamuna', 'Analyst', '44000', '444');
+
+select * from Details;
+
+ select Employee_job from Details;
+ 
+ select count(distinct Employee_Job) from Details;
+ 
+ select * from Details where Employee_Job = 'Developer';
+ 
+ select Employee_Deptno from Details order by  Employee_Deptno asc;
+ 
