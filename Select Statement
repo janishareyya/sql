@@ -1,0 +1,1 @@
+ select Employee_job from Details;
