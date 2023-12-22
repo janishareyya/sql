@@ -1,0 +1,6 @@
+create table Details(
+Employee_ID int,
+Employee_Name varchar(255),
+Employee_Job varchar(255),
+Employee_Salary int,
+Employee_Deptno int);
