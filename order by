@@ -1,0 +1,2 @@
+select Employee_Deptno from Details order by  Employee_Deptno asc;
+select Employee_Deptno from Details order by Employee_Deptno desc; 
