@@ -25,4 +25,28 @@ select * from Details;
  select * from Details where Employee_Job = 'Developer';
  
  select Employee_Deptno from Details order by  Employee_Deptno asc;
+
+select * from Details where Employee_Job = 'programmer'and Employee_Name like 'a%'; 
+ select * from Details where Employee_deptno = '222' and Employee_Job = 'programmer' ;
+ select * from Details where Employee_deptno = '222' and Employee_job = 'programmer' and Employee_Name %a;
+ 
+select * from Details where Employee_Job = 'programmer' or Employee_name = 'Janisha'; 
+ select * from Details where Employee_job = 'programmer' or Employee_name = 'Gowthami';
+ select * from Details where Employee_job = 'developer' or Employee_name = 'Gowthami';
+ select * from Details where Employee_job = 'developer' or Employee_name = 'Yamuna';
+select * from Details where Employee_job = 'analyst' or Employee_name = 'vijaya';
+
+select * from Details where Employee_job = 'analyst' and( Employee_name = 'vijaya' or employee_name = 'janisha' ); 
+
+select * from Details where not Employee_job = 'programmer';
+select * from Details where Employee_Name not like 'Y%' ; 
+select * from Details where Employee_ID not between 2 and 4;
+select * from Details where Employee_Name not in ('Janisha' , 'Gowthami');
+select * from Details where not Employee_salary > 40000; 
+select * from Details where not Employee_salary < 40000; 
+
+select Employee_Name, Employee_ID, Employee_Salary from Details where Employee_salary is null;
+select Employee_ID, Employee_Name, Employee_salary from Details where Employee_Salary is not null;
+
+
  
